@@ -1,5 +1,11 @@
+
+/* TODO: Load actual font: https://macunsw.wordpress.com/2009/03/18/how-to-achieve-cross-browser-font-face-support/ */
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Arabic Typesetting", "Comic Sans MS", sans-serif;
+}
+
+h1 {
+    font-family: "Gabriola", serif;
 }
 
 body {
