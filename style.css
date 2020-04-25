@@ -29,6 +29,7 @@ nav ul {
     padding: 0;
     list-style: none;
     display: flex;
+    background-color: antiquewhite;
 }
 
 td {
@@ -50,7 +51,6 @@ nav>ul>li:not(first){
 nav {
     margin: 0;
     padding: 2% 0;
-    background-color: antiquewhite;
 }
 
 footer {
@@ -60,4 +60,17 @@ footer {
 
 #content {
     margin: 0 20%;
+}
+
+.gallery {
+    max-height: 400px;
+    opacity: 0.5;
+}
+.gallery.main {
+    max-height: 600px;
+    opacity: 1;
+}
+
+.gallery.hidden {
+    display: none;
 }

@@ -3,10 +3,11 @@
 
 <head>
     <title>Maß-o-Meter</title>
+    <script src="gallery.js"></script>
 </head>
 <link rel="stylesheet" type="text/css" href="style.css" />
 
-<body>
+<body  onload="load('damen')">
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -45,7 +46,11 @@
             </tr>
         </table>
         <h2 id="arbeiten">Realisiert...</h2>
-        <img id="damen"/>
+        <div id="damen">
+            <img src="./assets/bilder/damen/1.jpg"/>
+            <img src="./assets/bilder/damen/2.jpg"/>
+            <img src="./assets/bilder/damen/3.jpg"/>
+        </div>
         <span>... für die Dame</span>
         <img id="herren"/>
         <span>... für den Herrn</span>
