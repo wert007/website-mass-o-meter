@@ -74,3 +74,23 @@ footer {
 .gallery.hidden {
     display: none;
 }
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    object-fit: cover;
+    float: left;
+    width: 28%;
+    height: 450px;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .cover{
+      object-fit: cover;
+  }

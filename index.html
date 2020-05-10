@@ -3,11 +3,11 @@
 
 <head>
     <title>Maß-o-Meter</title>
-    <script src="gallery.js"></script>
 </head>
 <link rel="stylesheet" type="text/css" href="style.css" />
 
-<body  onload="load('damen')">
+<body>
+    <script src="gallery.js"></script>
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -46,16 +46,54 @@
             </tr>
         </table>
         <h2 id="arbeiten">Realisiert...</h2>
+        <!--
         <div id="damen">
             <img src="./assets/bilder/damen/1.jpg"/>
             <img src="./assets/bilder/damen/2.jpg"/>
             <img src="./assets/bilder/damen/3.jpg"/>
         </div>
         <span>... für die Dame</span>
-        <img id="herren"/>
+        <div id="herren">
+           
+        </div>
         <span>... für den Herrn</span>
+        -->
+        <div id="damen">
+            <div class="row">
+                <div class="column">
+                    <img id = "damenLeft" class="cover" src="./assets/bilder/damen/1.jpg" style="width:100%; height:100%;opacity: 0.2;">
+                    </div>
+                    <div class="column">
+                    <img id = "damenCenter" class="cover" src="./assets/bilder/damen/2.jpg" style = "width:100%;height:100%;opacity: 1;">
+                    </div>
+                    <div class="column">
+                    <img id = "damenRight" class="cover" src="./assets/bilder/damen/3.jpg" style="width:100%; height:100%;opacity: 0.2;">
+                </div>
+            </div>
+        </div>
+        <button onclick="dunno('damen','left')">Left</button>
+        <button onclick="dunno('damen','right')">Right</button>
+        <span>... für die Dame</span>
+
+        <div id="herren">
+            <div class="row">
+                <div class="column">
+                    <img id = "herrenLeft" class = "cover" src="./assets/bilder/herren/1.jpg" style="width:100%;height:100%;opacity: 0.2;">
+                    </div>
+                    <div class="column">
+                    <img id="herrenCenter" class = "cover" src="./assets/bilder/herren/2.jpg" style="width:100%;height:100%">
+                    </div>
+                    <div class="column">
+                    <img id="herrenRight" class = "cover" src="./assets/bilder/herren/3.jpg" style="width:100%;height:100%;opacity: 0.2;">
+                </div>
+            </div>
+        </div>
+        <button onclick="dunno('herren','left')">Left</button>
+        <button onclick="dunno('herren','right')">Right</button>
+        <span>... für den Herren</span>
+
         <h2 id="farbeUndStil">Kombiniert...</h2>
-        <img/>
+    
         <h3>Ablauf der Beratung</h3>
         <ul>
             <li> Ausführliches Gespräch über Ihre Erwartungen an die Farb- und Stilberatung </li>
