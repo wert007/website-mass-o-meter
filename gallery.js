@@ -13,7 +13,7 @@ function dunno(gender, mode)
         cur = "herrenCenter";
         n = "herrenRight";
     }    
-    
+
     let previous = document.getElementById(prev).src.toString();
     let current = document.getElementById(cur).src.toString();
     let next = document.getElementById(n).src.toString();
@@ -57,7 +57,7 @@ function shiftLeft(gender, pic)
 
 function shiftRight(gender, pic)
 { 
-    let mod = gender == "damen" ? 20 : 8;
+    let mod = gender == "damen" ? 21 : 9;
     pic = ++pic % mod;
     if(pic == 0) pic++;
 
