@@ -2,7 +2,8 @@ function slideshow(gender, idNumber)
 {
     imageId = "" + gender + idNumber;
     imageId = imageId.toString();
-    className = document.getElementId(imageID).className;
+    className = document.getElementById(imageId).className.toString();
+    console.log(className);
     if(className == "imageCenter") return;
 
     if(className == "imageLeft") shiftLeft(gender, imageId, idNumber);
@@ -10,88 +11,49 @@ function slideshow(gender, idNumber)
     return;
 }
 
-function shiftRight(gender, imageId, idNumber)
+function shiftRight(gender, centerId, idNumber)
 {
     let mod = gender == "damen" ? 20 : 8;
-    let left = (imageId - 1) < 0 ? mod - 1 : imageId - 1; 
-    let center = imageId;
-    let right = (center + 1) % mod;
+
+    let left = (idNumber - 1) < 0 ? mod : idNumber - 1; 
+    let right = (idNumber + 1)
+    let notVisible = (idNumber - 2) < 0 ? mod - 1 + idNumber : idNumber - 2;
+    if(gender == "damen") right = idNumber == 19 ? 0 : right;
+    if(gender == "herren") right = idNumber == 7 ? 0 : right; 
+
     
-    
+    console.log(idNumber);
 
-
-
+    showSlides(gender, notVisible, left, centerId, right);
 }
 
-function shiftLeft(gender, imageId, idNumber)
+function shiftLeft(gender, centerId, idNumber)
 {
     let mod = gender == "damen" ? 19 : 7;
 
+    let left = idNumber - 1;
+    if(left < 0) left = mod;
 
+    let right = idNumber + 1;
+    if(right > mod) right = 0;
+
+    let notVisible = idNumber + 2;
+    if(notVisible > mod) notVisible = notVisible - mod;
+
+    showSlides(gender, notVisible, left, centerId, right);
 }
 
-
-
-/*function dunno(gender, mode)
+function showSlides(gender, notVisible, left, centerId, right)
 {
-    let prev, cur, n;
-    if(gender == 'damen')
-    {
-        prev = "damenLeft";
-        cur = "damenCenter";
-        n = "damenRight";
-    }
-    else if(gender == 'herren')
-    {
-        prev = "herrenLeft";
-        cur = "herrenCenter";
-        n = "herrenRight";
-    }    
-
-    let previous = document.getElementById(prev).src.toString();
-    let current = document.getElementById(cur).src.toString();
-    let next = document.getElementById(n).src.toString();
-    let picLeft, picCenter, picRight;
-
-    if(mode == 'left')
-    {
-        picLeft = shiftLeft(gender, getPicture(previous));
-        picCenter = shiftLeft(gender, getPicture(current));
-        picRight = shiftLeft(gender, getPicture(next));
-    }
-    else if(mode == 'right')
-    {
-        picLeft = shiftRight(gender, getPicture(previous));
-        picCenter = shiftRight(gender, getPicture(current));
-        picRight = shiftRight(gender, getPicture(next));
-    }
+    let notVisibleId = ("" + gender + notVisible).toString();
+    let leftId = ("" + gender + left).toString();
+    let rightId = ("" + gender + right).toString();
     
-    document.getElementById(prev).src = "./assets/bilder/" + gender + "/" + picLeft + ".jpg";
-    //document.getElementById(prev).href = "./assets/bilder/" + gender + "/" + 
-    document.getElementById(cur).src = "./assets/bilder/" + gender + "/" + picCenter + ".jpg";
-    document.getElementById(n).src = "./assets/bilder/" + gender + "/" + picRight + ".jpg";
-    //document.getElementById(n).href = "./assets/bilder/" + gender + "/" + gender == "damen" ? ++pic % 20 : ++pic % 8 + ".jpg";
+
+    document.getElementById(notVisibleId).className = "imageHidden";
+    document.getElementById(leftId).className = "imageLeft";
+    document.getElementById(centerId).className = "imageCenter";
+    document.getElementById(rightId).className = "imageRight";
+
 }
 
-function getPicture(src)
-{
-    src = src.replace ( /[^\d]/g, '' );
-    let num = parseInt(src);
-    num = num > 800000 ? num - 808000 : num - 80800;
-    return num;
-}
-
-function shiftLeft(gender, pic)
-{
-  let mod = gender == "damen" ? 19 : 7;
-  pic = --pic < 0 ? mod: pic;
-  return pic.toString();
-}
-
-function shiftRight(gender, pic)
-{ 
-   let mod = gender == "damen" ? 20 : 8;
-   pic = ++pic % mod;
-   return pic.toString();
-}
-*/
