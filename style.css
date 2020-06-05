@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'Mignon-Regular';
+    src:url('assets/font/Mignon-Regular.ttf.woff') format('woff'),
+        url('assets/font/Mignon-Regular.ttf.svg#Mignon-Regular') format('svg'),
+        url('assets/font/Mignon-Regular.ttf.eot'),
+        url('assets/font/Mignon-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 
-/* TODO: Load actual font: https://macunsw.wordpress.com/2009/03/18/how-to-achieve-cross-browser-font-face-support/ */
 * {
-    font-family: "Arabic Typesetting", "Comic Sans MS", sans-serif;
+    font-family: 'Mignon-Regular', "Comic Sans MS", sans-serif;
 }
 
 h1 {
