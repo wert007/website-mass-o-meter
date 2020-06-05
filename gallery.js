@@ -15,31 +15,22 @@ function shiftRight(gender, centerId, idNumber)
 {
     let mod = gender == "damen" ? 19 : 7;
 
-    let left = idNumber - 1;
-    if(left < 0) left = mod;
-
-    let right = idNumber + 1;
-    if(right > mod) right = 0;
-
-    let notVisible = idNumber - 2;
-    if(notVisible < 0) notVisible = mod - 1 + notVisible;
+    let left = (idNumber - 1 + mod) % mod;
+    let right = (idNumber + 1 + mod) % mod;
+    let notVisible = (left - 1 + mod) % mod;
 
     showSlides(gender, notVisible, left, centerId, right);
 
 }
 
+//Clicked on the left pic
 function shiftLeft(gender, centerId, idNumber)
 {
     let mod = gender == "damen" ? 19 : 7;
 
-    let left = idNumber - 1;
-    if(left < 0) left = mod;
-
-    let right = idNumber + 1;
-    if(right > mod) right = 0;
-
-    let notVisible = idNumber + 2;
-    if(notVisible > mod) notVisible = notVisible - mod -1;
+    let left = (idNumber - 1 + mod) % mod;
+    let right = (idNumber + 1 + mod) % mod;
+    let notVisible = (right + 1 + mod) % mod;
 
     showSlides(gender, notVisible, left, centerId, right);
 }
