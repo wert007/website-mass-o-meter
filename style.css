@@ -156,9 +156,7 @@ footer {
     display: none;
 }
 
-
-
-  .imageLeft{
+.imageLeft{
     position:absolute;
     object-fit: cover;
     float: Left;
@@ -169,20 +167,18 @@ footer {
     margin-left:25px;;
     opacity:0.1;
     left: 5%;
+}
 
-  }
-
-  .imageCenter{
+.imageCenter{
     position: absolute;
     object-fit: cover;
     width: 28%;
     height: 450px;
     padding: 5px;
     left: 30%;
+}
 
-  }
-
-  .imageRight{
+.imageRight{
     position:absolute;
     object-fit: cover;
     float: Right;
@@ -192,18 +188,16 @@ footer {
     height: 300px;
     opacity:0.1;
     left: 60%;
+}
 
-  }
-
-  .imageHidden{
-      display:none;
-  }
+.imageHidden{
+    display:none;
+}
 
 .slideshow{
     position: relative;
     display:block;
     height:470px;
     left: 10%;
-
 }
 
