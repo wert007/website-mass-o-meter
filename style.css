@@ -83,6 +83,17 @@ footer {
     height: 450px;
     padding: 5px;
   }
+
+  .columnSmall {
+      object-fit: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5px;
+      height: 300px;
+      width: 28%;
+      float: Left;
+  }
   
   /* Clear floats after image containers */
   .row::after {
