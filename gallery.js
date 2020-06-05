@@ -1,4 +1,38 @@
-function dunno(gender, mode)
+function slideshow(gender, idNumber)
+{
+    imageId = "" + gender + idNumber;
+    imageId = imageId.toString();
+    className = document.getElementId(imageID).className;
+    if(className == "imageCenter") return;
+
+    if(className == "imageLeft") shiftLeft(gender, imageId, idNumber);
+    else if(className == "imageRight") shiftRight(gender, imageId, idNumber);
+    return;
+}
+
+function shiftRight(gender, imageId, idNumber)
+{
+    let mod = gender == "damen" ? 20 : 8;
+    let left = (imageId - 1) < 0 ? mod - 1 : imageId - 1; 
+    let center = imageId;
+    let right = (center + 1) % mod;
+    
+    
+
+
+
+}
+
+function shiftLeft(gender, imageId, idNumber)
+{
+    let mod = gender == "damen" ? 19 : 7;
+
+
+}
+
+
+
+/*function dunno(gender, mode)
 {
     let prev, cur, n;
     if(gender == 'damen')
@@ -60,3 +94,4 @@ function shiftRight(gender, pic)
    pic = ++pic % mod;
    return pic.toString();
 }
+*/
