@@ -47,23 +47,51 @@
 
         </table>
         <h2 id="arbeiten">Realisiert...</h2>
-        
+        <!---
         <div id="damen">
             <div class="row">
                 <div class="columnSmall">
-                    <img id = "damenLeft" class="cover" src="./assets/bilder/damen/1.jpg" style="width:100%; height:100%;opacity: 0.1;" onclick="dunno('damen','left')" role="button">
+                    <img rel="preload" href="./assets/bilder/damen/0.jpg" as="src" id = "damenLeft" class="cover" src="./assets/bilder/damen/1.jpg" style="width:100%; height:100%; opacity: 0.1;" onclick="dunno('damen','left')" role="button">
                     </div>
                     <div class="column">
-                    <img id = "damenCenter" class="cover" src="./assets/bilder/damen/2.jpg" style = "width:100%;height:100%;opacity: 1;">
+                    <img id = "damenCenter" class="cover" src="./assets/bilder/damen/2.jpg" style ="width:100%;height:100%; opacity: 1;">
                     </div>
                     <div class="columnSmall">
-                    <img id = "damenRight" class="cover" src="./assets/bilder/damen/3.jpg" style="width:100%; height:100%;opacity: 0.1;" onclick="dunno('damen','right')" role="button">
+                    <img rel="preload" href="./assets/bilder/damen/4.jpg" as="src" id = "damenRight" class="cover" src="./assets/bilder/damen/3.jpg" style="width:100%; height:100%; opacity: 0.1;" onclick="dunno('damen','right')" role="button">
                 </div>
             </div>
         </div>
+        -->
+
+        <div id="damen" class="slideshow">
+            <img id="damen0" class="imageHidden" src="./assets/bilder/damen/0.jpg" onclick="slideshow('damen')" role="button">
+            <img id="damen1" class="imageLeft" src="./assets/bilder/damen/1.jpg" onclick="slideshow('damen')" role="button">
+            <img id="damen2" class="imageCenter" src="./assets/bilder/damen/2.jpg" onclick="slideshow('damen')" role="button">
+            <img id="damen3" class="imageRight" src="./assets/bilder/damen/3.jpg" onclick="slideshow('damen')" role="button">
+            <img id="damen4" class="imageHidden" src="./assets/bilder/damen/4.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen5" class="imageHidden" src="./assets/bilder/damen/5.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen6" class="imageHidden" src="./assets/bilder/damen/6.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen7" class="imageHidden" src="./assets/bilder/damen/7.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen8" class="imageHidden" src="./assets/bilder/damen/8.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen9" class="imageHidden" src="./assets/bilder/damen/9.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen10" class="imageHidden" src="./assets/bilder/damen/10.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen11" class="imageHidden" src="./assets/bilder/damen/11.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen12" class="imageHidden" src="./assets/bilder/damen/12.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen13" class="imageHidden" src="./assets/bilder/damen/13.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen14" class="imageHidden" src="./assets/bilder/damen/14.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen15" class="imageHidden" src="./assets/bilder/damen/15.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen16" class="imageHidden" src="./assets/bilder/damen/16.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen17" class="imageHidden" src="./assets/bilder/damen/17.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen18" class="imageHidden" src="./assets/bilder/damen/18.jpg"  onclick="slideshow('damen')" role="button">
+            <img id="damen19" class="imageHidden" src="./assets/bilder/damen/19.jpg"  onclick="slideshow('damen')" role="button">
+        </div>
+
+
+
         <span>... für die Dame</span>
 
-        <div id="herren">
+        <!--
+        <div id="herren" >
             <div class="row">
                 <div class="columnSmall">
                     <img id = "herrenLeft" class = "cover" src="./assets/bilder/herren/1.jpg" style="width:100%;height:100%;opacity: 0.1;" onclick="dunno('herren','left')" role="button">
@@ -76,6 +104,19 @@
                 </div>
             </div>
         </div>
+        -->
+        <div id="herren">
+            <img id="herren0" class="imageHidden" src="./assets/bilder/herren/0.jpg"  onclick="slideshow('herren')" role="button">
+            <img id="herren1" class="imageLeft" src="./assets/bilder/herren/1.jpg"  onclick="slideshow('herren')" role="button">
+            <img id="herren2" class="imageCenter" src="./assets/bilder/herren/2.jpg"  onclick="slideshow('herren')" role="button">
+            <img id="herren3" class="imageRight" src="./assets/bilder/herren/3.jpg"  onclick="slideshow('herren')" role="button">
+            <img id="herren4" class="imageHidden" src="./assets/bilder/herren/4.jpg"  onclick="slideshow('herren')" role="button">
+            <img id="herren5" class="imageHidden" src="./assets/bilder/herren/5.jpg"  onclick="slideshow('herren')" role="button">
+            <img id="herren6" class="imageHidden" src="./assets/bilder/herren/6.jpg"  onclick="slideshow('herren')" role="button">
+            <img id="herren7" class="imageHidden" src="./assets/bilder/herren/7.jpg"  onclick="slideshow('herren')" role="button">
+        </div>
+
+
         <span>... für den Herren</span>
 
         <h2 id="farbeUndStil">Kombiniert...</h2>

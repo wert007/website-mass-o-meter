@@ -33,8 +33,10 @@ function dunno(gender, mode)
     }
     
     document.getElementById(prev).src = "./assets/bilder/" + gender + "/" + picLeft + ".jpg";
+    //document.getElementById(prev).href = "./assets/bilder/" + gender + "/" + 
     document.getElementById(cur).src = "./assets/bilder/" + gender + "/" + picCenter + ".jpg";
     document.getElementById(n).src = "./assets/bilder/" + gender + "/" + picRight + ".jpg";
+    //document.getElementById(n).href = "./assets/bilder/" + gender + "/" + gender == "damen" ? ++pic % 20 : ++pic % 8 + ".jpg";
 }
 
 function getPicture(src)
@@ -47,59 +49,14 @@ function getPicture(src)
 
 function shiftLeft(gender, pic)
 {
-   let mod = gender == "damen" ? 20 : 8;
-   console.log(pic);
-   pic = pic <= 1 ? (mod + --pic)%mod : --pic;
-   if(pic == 0) pic = mod;
-   //console.log(pic);
-   return pic.toString();
+  let mod = gender == "damen" ? 19 : 7;
+  pic = --pic < 0 ? mod: pic;
+  return pic.toString();
 }
 
 function shiftRight(gender, pic)
 { 
-    let mod = gender == "damen" ? 21 : 9;
-    pic = ++pic % mod;
-    if(pic == 0) pic++;
-
-    return pic.toString();
+   let mod = gender == "damen" ? 20 : 8;
+   pic = ++pic % mod;
+   return pic.toString();
 }
-
-/*
-let indices = {}
-
-function load(galleryId) {
-    let gallery = document.getElementById(galleryId);
-    indices[galleryId] = 1;
-    setFocus(gallery, "./assets/bilder/" + galleryId + "/", indices[galleryId]);
-
-    for (const img of gallery.children) {
-        img.onclick = function (event) {
-            console.log(event);
-            const img = event.toElement;
-            const parent = img.parentElement;
-            if (img.className.includes("Left")) {
-                indices[parent.id]--;
-            }
-            else if (img.className.includes("Right")) {
-                indices[parent.id]++;
-            }
-            
-            setFocus(gallery, "./assets/bilder/" + parent.id + "/", indices[parent.id]);
-        }
-    }
-}
-
-function setFocus(parent, path, index) {
-    for (let i = 0; i < parent.childElementCount; i++) {
-        const img = parent.children[i];
-        console.log(img);
-        img.src = path + (i + 1 + index) + ".jpg";
-        if (i == 0)
-            img.className = "gallery previewLeft";
-        else if (i == 1)
-            img.className = "gallery main";
-        else if (i == 2)
-            img.className = "gallery previewRight";
-
-    }
-}*/

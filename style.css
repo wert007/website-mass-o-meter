@@ -80,33 +80,110 @@ footer {
     display: none;
 }
 
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* Three image containers (use 25% for four, and 50% for two, etc) 
+/*
 .column {
     object-fit: cover;
     float: Left;
     width: 28%;
     height: 450px;
     padding: 5px;
+    /*margin-left: 7%;
   }
 
   .columnSmall {
       object-fit: cover;
+      float: Left;
+      width: 20%;
       display: block;
-      margin-top: 9%;
-      margin-bottom: auto;
+      margin-top: 7%;
       padding: 5px;
       height: 300px;
-      width: 20%;
-      float: Left;
+      /*margin-left: 7%;
   }
   
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  /* Clear floats after image containers 
+  .row {
+    display:table; 
+    margin-left:12%;
+    width:120%;
+    height:120%;
   }
 
   .cover{
       object-fit: cover;
   }
+
+  .columnLeft{
+    object-fit: cover;
+    float: Left;
+    width: 20%;
+    display: block;
+    margin-top: 7%;
+    padding: 5px;
+    height: 300px;
+
+  }
+
+  .columnCenter{
+    object-fit: cover;
+    float: Left;
+    width: 28%;
+    height: 450px;
+    padding: 5px;
+
+  }
+
+  .columnRight{
+    object-fit: cover;
+    float: Left;
+    width: 20%;
+    display: block;
+    margin-top: 7%;
+    padding: 5px;
+    height: 300px;
+  }
+
+  */
+
+  .imageLeft{
+    object-fit: cover;
+    float: Left;
+    width: 20%;
+    margin-top: 7%;
+    padding: 5px;
+    height: 300px;
+    margin-left:14%;
+    opacity:0.1;
+
+  }
+
+  .imageCenter{
+    object-fit: cover;
+    float: Left;
+    width: 28%;
+    height: 450px;
+    padding: 5px;
+
+  }
+
+  .imageRight{
+    object-fit: cover;
+    float: Left;
+    width: 20%;
+    margin-top: 7%;
+    padding: 5px;
+    height: 300px;
+    width:100px;
+    opacity:0.1;
+
+  }
+
+  .imageHidden{
+      display:none;
+  }
+
+.slideshow{
+    display:block;
+}
+
