@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'Mignon-Regular';
+    src:url('assets/font/Mignon-Regular.ttf.woff') format('woff'),
+        url('assets/font/Mignon-Regular.ttf.svg#Mignon-Regular') format('svg'),
+        url('assets/font/Mignon-Regular.ttf.eot'),
+        url('assets/font/Mignon-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 
-/* TODO: Load actual font: https://macunsw.wordpress.com/2009/03/18/how-to-achieve-cross-browser-font-face-support/ */
 * {
-    font-family: "Arabic Typesetting", "Comic Sans MS", sans-serif;
+    font-family: 'Mignon-Regular', "Comic Sans MS", sans-serif;
 }
 
 h1 {
@@ -24,35 +32,82 @@ body {
     margin: 0;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+/*navbar*/
+nav {
+    overflow: hidden;
+    background-color: #333;
     display: flex;
-    background-color: antiquewhite;
-}
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+  
+  /* Links inside the navbar */
+  nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  nav a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
+/*end navbar*/
 td {
     vertical-align: top;
 }
-
-nav>ul>li ul {
-    display: none;
-}
-
-nav>ul>li:hover ul {
-    display: block;
-}
-
-nav>ul>li:not(first){
-    padding: 0 1em;
-}
-
-nav {
-    margin: 0;
-    padding: 2% 0;
-}
-
 footer {
     padding: 2% 0;
     background-color: rgb(8, 202, 170);
@@ -61,10 +116,20 @@ footer {
 #content {
     margin: 0 20%;
 }
+#head {
+    position: relative;
+}
+
+#branding {
+    position: absolute;
+    top:0;
+}
 
 #logo {
-    width: 100%;
+    width: 60%;
     height: auto;
+    margin: 10px auto;
+    display: block;
 }
 
 .gallery {
