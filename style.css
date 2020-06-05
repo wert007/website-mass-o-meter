@@ -36,7 +36,9 @@ body {
 nav {
     overflow: hidden;
     background-color: #333;
-    font-family: Arial;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
   }
   
   /* Links inside the navbar */
@@ -106,24 +108,6 @@ nav {
 td {
     vertical-align: top;
 }
-
-nav>ul>li ul {
-    display: none;
-}
-
-nav>ul>li:hover ul {
-    display: block;
-}
-
-nav>ul>li:not(first){
-    padding: 0 1em;
-}
-
-nav {
-    margin: 0;
-    padding: 2% 0;
-}
-
 footer {
     padding: 2% 0;
     background-color: rgb(8, 202, 170);
@@ -144,7 +128,7 @@ footer {
 #logo {
     width: 60%;
     height: auto;
-    margin: 0 auto;
+    margin: 10px auto;
     display: block;
 }
 
