@@ -12,10 +12,6 @@
     font-family: 'Mignon-Regular', "Comic Sans MS", sans-serif;
 }
 
-h1 {
-    font-family: "Gabriola", serif;
-}
-
 h2 {
     color: #007d87;
 }
@@ -105,9 +101,15 @@ nav {
   }
 
 /*end navbar*/
-td {
+tr>td {
     vertical-align: top;
 }
+
+tr>td:first-child {
+    width: 150px;
+}
+
+
 footer {
     padding: 2% 0;
     background-color: rgb(8, 202, 170);
