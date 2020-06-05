@@ -79,8 +79,10 @@ footer {
 }
 
 #logo {
-    width: 100%;
+    width: 60%;
     height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .gallery {
