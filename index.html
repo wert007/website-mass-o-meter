@@ -9,23 +9,26 @@
 <body>
     <script src="gallery.js"></script>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#arbeiten">Arbeiten</a>
-                <ul>
-                    <li><a href="#damen">Damen</a></li>
-                    <li><a href="#herren">Herren</a></li>
-                </ul>
-            </li>
-            <li><a href="#farbeUndStil">Farbe & Stil</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
+        <a href="#home">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <!--<a href="#arbeiten">-->Arbeiten
+                <!--</a>-->
+            </button>
+            <div class="dropdown-content">
+                <a href="#damen">Damen</a>
+                <a href="#herren">Herren</a>
+            </div>
+        </div>
+        <a href="#farbeUndStil">Farbe & Stil</a>
+        <a href="#kontakt">Kontakt</a>
         </ul>
     </nav>
     <div id="content">
         <div id="head">
-            <img id="logo" src="assets/svgs/logo.svg"/>
+            <img id="logo" src="assets/svgs/logo.svg" />
             <div id="branding">
-                <img id="brand" src="assets/svgs/brand.svg"/>
+                <img id="brand" src="assets/svgs/brand.svg" />
 
                 <span>Maßanfertigungen</span>
                 <span>Farb- und Stilberatung</span>
@@ -35,33 +38,48 @@
         <table>
             <tr>
                 <td>Damen</td>
-                <td>Damenmaßschneiderei hat viele Facetten! Vom eleganten Complet über die klassische Chaneljacke bis zum abstrakten Bühnenoutfit sind der Fantasie keine Grenzen gesetzt. 
+                <td>Damenmaßschneiderei hat viele Facetten! Vom eleganten Complet über die klassische Chaneljacke bis
+                    zum abstrakten Bühnenoutfit sind der Fantasie keine Grenzen gesetzt.
                 </td>
             </tr>
             <tr>
                 <td>Herren</td>
-                <td>Auch der Herr von heute ist im Begriff, die Vorzüge der Maßschneiderei erneut schätzen zu lernen. Er legt Wert auf Individualität und hebt sich mit dem passenden Auftritt je nach Anlass positiv von der Masse ab. Ein passgenauer Anzug kann ein jahrelanger Begleiter sein, mit dem man(n) viele positive Erinnerungen verbindet. 
+                <td>Auch der Herr von heute ist im Begriff, die Vorzüge der Maßschneiderei erneut schätzen zu lernen. Er
+                    legt Wert auf Individualität und hebt sich mit dem passenden Auftritt je nach Anlass positiv von der
+                    Masse ab. Ein passgenauer Anzug kann ein jahrelanger Begleiter sein, mit dem man(n) viele positive
+                    Erinnerungen verbindet.
                 </td>
             </tr>
             <tr>
                 <td>Farbe &amp; Stil</td>
-                <td>Eine professionelle Farb- und Stilberatung ist die Grundlage für jede typgerechte Garderobe. Das bedeutet keinesfalls, dass danach der komplette Inhalt des Kleiderschrankes durch neue Sachen ersetzt werden muss! Vielmehr möchte ich mit Ihnen eine ausführliche Analyse Ihres Farbtyps, Ihrer Stilrichtung sowie Ihrer individuellen Erwartungen an die Beratung durchführen. Anschließend bietet sich ein "Kleiderschrank-Check" an, um die aus der Analyse gewonnenen Erkenntnisse sogleich anzuwenden. Dabei zeige ich auf, wie Sie Ihre Lieblingskleidungsstücke mit neuen Stücken ergänzen, aufwerten oder variieren können. Vermeintliche Fehlkäufe erscheinen richtig kombiniert in neuem Licht und so manche Überzeugung, was Ihnen steht oder nicht, sehen Sie womöglich plötzlich mit anderen Augen. 
+                <td>Eine professionelle Farb- und Stilberatung ist die Grundlage für jede typgerechte Garderobe. Das
+                    bedeutet keinesfalls, dass danach der komplette Inhalt des Kleiderschrankes durch neue Sachen
+                    ersetzt werden muss! Vielmehr möchte ich mit Ihnen eine ausführliche Analyse Ihres Farbtyps, Ihrer
+                    Stilrichtung sowie Ihrer individuellen Erwartungen an die Beratung durchführen. Anschließend bietet
+                    sich ein "Kleiderschrank-Check" an, um die aus der Analyse gewonnenen Erkenntnisse sogleich
+                    anzuwenden. Dabei zeige ich auf, wie Sie Ihre Lieblingskleidungsstücke mit neuen Stücken ergänzen,
+                    aufwerten oder variieren können. Vermeintliche Fehlkäufe erscheinen richtig kombiniert in neuem
+                    Licht und so manche Überzeugung, was Ihnen steht oder nicht, sehen Sie womöglich plötzlich mit
+                    anderen Augen.
                 </td>
             </tr>
 
         </table>
         <h2 id="arbeiten">Realisiert...</h2>
-        
+
         <div id="damen">
             <div class="row">
                 <div class="columnSmall">
-                    <img id = "damenLeft" class="cover" src="./assets/bilder/damen/1.jpg" style="width:100%; height:100%;opacity: 0.1;" onclick="dunno('damen','left')" role="button">
-                    </div>
-                    <div class="column">
-                    <img id = "damenCenter" class="cover" src="./assets/bilder/damen/2.jpg" style = "width:100%;height:100%;opacity: 1;">
-                    </div>
-                    <div class="columnSmall">
-                    <img id = "damenRight" class="cover" src="./assets/bilder/damen/3.jpg" style="width:100%; height:100%;opacity: 0.1;" onclick="dunno('damen','right')" role="button">
+                    <img id="damenLeft" class="cover" src="./assets/bilder/damen/1.jpg"
+                        style="width:100%; height:100%;opacity: 0.1;" onclick="dunno('damen','left')" role="button">
+                </div>
+                <div class="column">
+                    <img id="damenCenter" class="cover" src="./assets/bilder/damen/2.jpg"
+                        style="width:100%;height:100%;opacity: 1;">
+                </div>
+                <div class="columnSmall">
+                    <img id="damenRight" class="cover" src="./assets/bilder/damen/3.jpg"
+                        style="width:100%; height:100%;opacity: 0.1;" onclick="dunno('damen','right')" role="button">
                 </div>
             </div>
         </div>
@@ -70,30 +88,38 @@
         <div id="herren">
             <div class="row">
                 <div class="columnSmall">
-                    <img id = "herrenLeft" class = "cover" src="./assets/bilder/herren/1.jpg" style="width:100%;height:100%;opacity: 0.1;" onclick="dunno('herren','left')" role="button">
-                    </div>
-                    <div class="column">
-                    <img id="herrenCenter" class = "cover" src="./assets/bilder/herren/2.jpg" style="width:100%;height:100%">
-                    </div>
-                    <div class="columnSmall">
-                    <img id="herrenRight" class = "cover" src="./assets/bilder/herren/3.jpg" style="width:100%;height:100%;opacity: 0.1;" onclick="dunno('herren','right')" role="button">
+                    <img id="herrenLeft" class="cover" src="./assets/bilder/herren/1.jpg"
+                        style="width:100%;height:100%;opacity: 0.1;" onclick="dunno('herren','left')" role="button">
+                </div>
+                <div class="column">
+                    <img id="herrenCenter" class="cover" src="./assets/bilder/herren/2.jpg"
+                        style="width:100%;height:100%">
+                </div>
+                <div class="columnSmall">
+                    <img id="herrenRight" class="cover" src="./assets/bilder/herren/3.jpg"
+                        style="width:100%;height:100%;opacity: 0.1;" onclick="dunno('herren','right')" role="button">
                 </div>
             </div>
         </div>
         <span>... für den Herren</span>
 
         <h2 id="farbeUndStil">Kombiniert...</h2>
-    
+
         <h3>Ablauf der Beratung</h3>
         <ul>
             <li> Ausführliches Gespräch über Ihre Erwartungen an die Farb- und Stilberatung </li>
             <li> Analyse Ihres Farbtyps (kalt- oder warmtonig) mit evtl. Tendenzen in den jeweils anderen Bereich </li>
             <li> Typisierung und Einordnung Ihrer Figur und Körperformen </li>
-            <li> Auswahl verschiedener Muster, Materialien und Oberflächenstrukturen passend zu Ihrem Erscheinungsbild </li>
-            <li> Bestimmung der Accessoires wie Schmuck, Brille, Handtasche und Schuhe. Auch Frisur, Haarfarbe und Ausschnittformen werden berücksichtigt. </li>
-            <li> Zusammenfassung der erörterten Ergebnisse in einem kleinen Handbuch und Aushändigung des zutreffenden Farbpasses </li>
-            <li> Empfehlung Kleiderschrankcheck:<br> Gemeinsames systematisches Durchgehen Ihres Kleiderschrankes und Zusammenstellung von kompletten Outfits inklusive Accessoires bei Ihnen zu Hause  </li>
-            <li> Das Tüpfelchen auf dem i: <br> Anfertigung beispielsweise eines Basisteils oder eines Outfits für einen bestimmten Anlass </li>
+            <li> Auswahl verschiedener Muster, Materialien und Oberflächenstrukturen passend zu Ihrem Erscheinungsbild
+            </li>
+            <li> Bestimmung der Accessoires wie Schmuck, Brille, Handtasche und Schuhe. Auch Frisur, Haarfarbe und
+                Ausschnittformen werden berücksichtigt. </li>
+            <li> Zusammenfassung der erörterten Ergebnisse in einem kleinen Handbuch und Aushändigung des zutreffenden
+                Farbpasses </li>
+            <li> Empfehlung Kleiderschrankcheck:<br> Gemeinsames systematisches Durchgehen Ihres Kleiderschrankes und
+                Zusammenstellung von kompletten Outfits inklusive Accessoires bei Ihnen zu Hause </li>
+            <li> Das Tüpfelchen auf dem i: <br> Anfertigung beispielsweise eines Basisteils oder eines Outfits für einen
+                bestimmten Anlass </li>
         </ul>
         <h3>Preise</h3>
         <table>
@@ -124,7 +150,8 @@
         </table>
         <h2 id="kontakt">Identifiziert...</h2>
         <blockquote>Kleider machen Leute – und Leute machen Kleider <cite>(Gottfried Keller)</cite> </blockquote>
-        <p>Einer dieser Leute bin ich: Ines Mühlmann, Schneidermeisterin, Farb- und Stilberaterin und Textilingenieurin.</p>
+        <p>Einer dieser Leute bin ich: Ines Mühlmann, Schneidermeisterin, Farb- und Stilberaterin und Textilingenieurin.
+        </p>
         <table>
             <tr>
                 <td>2003</td>
@@ -144,7 +171,8 @@
             </tr>
             <tr>
                 <td>2009 – 2012</td>
-                <td>Abschluss der Deutschen Meisterschule für Mode in München und Abschluss der Fachschule für Schnitt und Entwurf </td>
+                <td>Abschluss der Deutschen Meisterschule für Mode in München und Abschluss der Fachschule für Schnitt
+                    und Entwurf </td>
             </tr>
             <tr>
                 <td>2012 – 2016</td>
@@ -155,11 +183,14 @@
                 <td>Abschluss Bachelor of Engineering des Studiengangs Innovative Textilien an der Hochschule Hof</td>
             </tr>
         </table>
-        <p>Die Maßschneiderei ist einer der ältesten Handwerksberufe. Trotzdem gibt es vielfältige Möglichkeiten, alte Schneiderkunst mit modernen Ideen zu verbinden und ein einzigartiges Kleidungsstück zu kreieren, das perfekt zu dem Anlass passt, zu dem es getragen werden soll. Genau das habe ich mir zur Aufgabe gemacht: eine helfende Hand(werkerin) zu sein. </p>
+        <p>Die Maßschneiderei ist einer der ältesten Handwerksberufe. Trotzdem gibt es vielfältige Möglichkeiten, alte
+            Schneiderkunst mit modernen Ideen zu verbinden und ein einzigartiges Kleidungsstück zu kreieren, das perfekt
+            zu dem Anlass passt, zu dem es getragen werden soll. Genau das habe ich mir zur Aufgabe gemacht: eine
+            helfende Hand(werkerin) zu sein. </p>
         <h3>Kontakt</h3>
-        <span>Name: <input/></span>
-        <span>eMail: <input/></span>
-        <span>Nachricht: <input/></span>
+        <span>Name: <input /></span>
+        <span>eMail: <input /></span>
+        <span>Nachricht: <input /></span>
         <button>Send</button>
     </div>
     <footer>(c) 2020</footer>
