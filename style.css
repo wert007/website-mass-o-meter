@@ -109,6 +109,15 @@ tr>td:first-child {
     width: 150px;
 }
 
+#priceTable>tbody>tr>td:last-child {
+    width: auto;
+}
+#priceTable>tbody>tr>td:first-child {
+    width: auto;
+    padding-right: 100px;
+}
+
+
 
 footer {
     padding: 2% 0;
