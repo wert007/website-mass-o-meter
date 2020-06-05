@@ -91,7 +91,7 @@ footer {
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     object-fit: cover;
-    float: left;
+    float: Left;
     width: 28%;
     height: 450px;
     padding: 5px;
@@ -100,7 +100,7 @@ footer {
   .columnSmall {
       object-fit: cover;
       display: block;
-      margin-top: 10%;
+      margin-top: 9%;
       margin-bottom: auto;
       padding: 5px;
       height: 300px;
