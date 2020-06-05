@@ -156,101 +156,42 @@ footer {
     display: none;
 }
 
-/* Three image containers (use 25% for four, and 50% for two, etc) 
-/*
-.column {
-    object-fit: cover;
-    float: Left;
-    width: 28%;
-    height: 450px;
-    padding: 5px;
-    /*margin-left: 7%;
-  }
 
-  .columnSmall {
-      object-fit: cover;
-      float: Left;
-      width: 20%;
-      display: block;
-      margin-top: 7%;
-      padding: 5px;
-      height: 300px;
-      /*margin-left: 7%;
-  }
-  
-  /* Clear floats after image containers 
-  .row {
-    display:table; 
-    margin-left:12%;
-    width:120%;
-    height:120%;
-  }
-
-  .cover{
-      object-fit: cover;
-  }
-
-  .columnLeft{
-    object-fit: cover;
-    float: Left;
-    width: 20%;
-    display: block;
-    margin-top: 7%;
-    padding: 5px;
-    height: 300px;
-
-  }
-
-  .columnCenter{
-    object-fit: cover;
-    float: Left;
-    width: 28%;
-    height: 450px;
-    padding: 5px;
-
-  }
-
-  .columnRight{
-    object-fit: cover;
-    float: Left;
-    width: 20%;
-    display: block;
-    margin-top: 7%;
-    padding: 5px;
-    height: 300px;
-  }
-
-  */
 
   .imageLeft{
+    position:absolute;
     object-fit: cover;
     float: Left;
     width: 20%;
     margin-top: 7%;
     padding: 5px;
     height: 300px;
-    margin-left:14%;
+    margin-left:25px;;
     opacity:0.1;
+    left: 5%;
 
   }
 
   .imageCenter{
+    position: absolute;
     object-fit: cover;
-    float: Left;
     width: 28%;
     height: 450px;
     padding: 5px;
+    left: 30%;
 
   }
 
   .imageRight{
+    position:absolute;
     object-fit: cover;
-    float: Left;
+    float: Right;
     width: 20%;
     margin-top: 7%;
     padding: 5px;
     height: 300px;
     opacity:0.1;
+    left: 60%;
 
   }
 
@@ -259,7 +200,10 @@ footer {
   }
 
 .slideshow{
+    position: relative;
     display:block;
     height:470px;
+    left: 10%;
+
 }
 
