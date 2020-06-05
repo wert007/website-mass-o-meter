@@ -69,11 +69,18 @@ footer {
 #content {
     margin: 0 20%;
 }
+#head {
+    position: relative;
+}
+
+#branding {
+    position: absolute;
+    top:0;
+}
 
 #logo {
     width: 100%;
     height: auto;
-    margin-top: -35%;
 }
 
 .gallery {
