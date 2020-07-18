@@ -44,6 +44,26 @@ body {
     margin: 0;
 }
 
+blockquote {
+    font-family: 'Gabriola', serif;
+    font-size: 20pt;
+    margin: 0;
+}
+
+blockquote cite {
+    font-size: .75em;
+}
+
+table th {
+    font-family: 'Gabriola', serif;
+    font-size: 20pt;
+    width: 30ch;
+}
+
+table tr {
+    line-height: 3em;
+}
+
 /*navbar*/
 nav {
     overflow: hidden;
