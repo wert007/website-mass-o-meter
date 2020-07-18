@@ -176,10 +176,10 @@ footer {
 }
 
 #logo {
-    width: 60%;
+    width: 100vw;
     height: auto;
-    margin: 10px auto;
-    display: block;
+    position: absolute;
+    left: 0;
 }
 
 .gallery {
