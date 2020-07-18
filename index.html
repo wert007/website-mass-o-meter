@@ -28,7 +28,7 @@
     <div id="content">
         <div id="head">
             <!--<img id="logo" src="assets/svgs/logo.svg" />-->
-            <img id="logo" src="assets/bilder/1.jpg" />
+            <img id="logo" src="assets/bilder/header/1.jpg" />
             <div id="branding">
                 <img id="brand" src="assets/svgs/brand.svg" />
 
