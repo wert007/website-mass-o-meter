@@ -10,6 +10,8 @@
 
 * {
     font-family: 'Mignon-Regular', "Comic Sans MS", sans-serif;
+    line-height: 1.8em;
+    box-sizing: border-box;
 }
 
 h1, h2 {
@@ -79,7 +81,7 @@ table {
 table th {
     font-family: 'Gabriola', serif;
     font-size: 20pt;
-    width: 12ch;
+    width: 17ch;
     text-align: left;
 }
 
@@ -164,7 +166,7 @@ tr>td {
 }
 
 tr>td:first-child {
-    width: 150px;
+    width: 200px;
 }
 
 #priceTable {
@@ -173,6 +175,7 @@ tr>td:first-child {
 
 #priceTable>tbody>tr>td:last-child {
     width: 5ch;
+    text-align: right;
 }
 #priceTable>tbody>tr>td:first-child {
     width: auto;
@@ -180,7 +183,29 @@ tr>td:first-child {
     display: list-item;
 }
 
+.label {
+    display: inline-block;
+    width: 15ch;
+}
 
+input {
+    width: 300px;
+    margin-top: 5px;
+}
+
+#message {
+    width: 100%;
+}
+
+#submit {
+    float: right;
+}
+
+form {
+    clear: both;
+    overflow-y: hidden;
+    margin-bottom: 30px;
+}
 
 footer {
     padding: 2% 0;
