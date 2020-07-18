@@ -1,3 +1,6 @@
+const femalePictures = 19;
+const malePictures = 7;
+
 function slideshow(gender, idNumber)
 {
     imageId = "" + gender + idNumber;
@@ -13,7 +16,7 @@ function slideshow(gender, idNumber)
 
 function shiftRight(gender, centerId, idNumber)
 {
-    let mod = gender == "damen" ? 19 : 7;
+    let mod = gender == "damen" ? femalePictures : malePictures;
 
     let left = (idNumber - 1 + mod) % mod;
     let right = (idNumber + 1 + mod) % mod;
@@ -26,7 +29,7 @@ function shiftRight(gender, centerId, idNumber)
 //Clicked on the left pic
 function shiftLeft(gender, centerId, idNumber)
 {
-    let mod = gender == "damen" ? 19 : 7;
+    let mod = gender == "damen" ? femalePictures : malePictures;
 
     let left = (idNumber - 1 + mod) % mod;
     let right = (idNumber + 1 + mod) % mod;
