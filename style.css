@@ -12,8 +12,9 @@
     font-family: 'Mignon-Regular', "Comic Sans MS", sans-serif;
 }
 
-h2 {
-    color: #007d87;
+h1, h2 {
+    color: #008d87;
+    text-align: center;
 }
 
 a {
