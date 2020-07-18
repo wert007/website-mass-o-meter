@@ -21,6 +21,7 @@ a {
     color: black;
     text-decoration: none;
 }
+
 span {
     display: block;
 }
@@ -134,7 +135,10 @@ footer {
 
 #branding {
     position: absolute;
+    text-align: center;
     top:0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #logo {
