@@ -67,6 +67,10 @@ blockquote cite {
     height: 300px;
 }
 
+ul li:not(:first-child) {
+    padding-top: 20px;
+}
+
 table {
     border-spacing: 0px 20px;
     border-collapse: separate;
@@ -163,12 +167,17 @@ tr>td:first-child {
     width: 150px;
 }
 
+#priceTable {
+    width: 100%;
+}
+
 #priceTable>tbody>tr>td:last-child {
-    width: auto;
+    width: 5ch;
 }
 #priceTable>tbody>tr>td:first-child {
     width: auto;
-    padding-right: 100px;
+    margin-left: 40px;
+    display: list-item;
 }
 
 
