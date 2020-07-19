@@ -94,10 +94,8 @@ table tr {
 /*navbar*/
 nav {
     overflow: hidden;
-    /*background-color: #333;*/
     display: flex;
     justify-content: flex-end;
-    padding-right: 50px;
 }
   
   /* Links inside the navbar */
@@ -181,7 +179,6 @@ tr>td:first-child {
 #priceTable>tbody>tr>td:first-child {
     width: auto;
     margin-left: 40px;
-    display: list-item;
 }
 
 .label {
