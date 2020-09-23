@@ -270,34 +270,34 @@ footer {
     position:absolute;
     object-fit: cover;
     float: Left;
-    width: 20%;
-    margin-top: 7%;
+    width: 27%;
+    margin-top: 9%;
     padding: 5px;
     height: 300px;
-    margin-left:25px;;
+    margin-left:4%;
     opacity:0.1;
-    left: 5%;
+    left: 0%;
 }
 
 .imageCenter{
     position: absolute;
     object-fit: cover;
-    width: 28%;
+    width: 35%;
     height: 450px;
-    padding: 5px;
-    left: 30%;
+    padding: 1%;
+    left: 32%;
 }
 
 .imageRight{
     position:absolute;
     object-fit: cover;
     float: Right;
-    width: 20%;
-    margin-top: 7%;
+    width: 27%;
+    margin-top: 9%;
     padding: 5px;
     height: 300px;
     opacity:0.1;
-    left: 60%;
+    left: 68%;
 }
 
 .imageHidden{
