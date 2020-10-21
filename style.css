@@ -1,9 +1,6 @@
 @font-face {
     font-family: 'Mignon-Regular';
-    src:url('assets/font/Mignon-Regular.ttf.woff') format('woff'),
-        url('assets/font/Mignon-Regular.ttf.svg#Mignon-Regular') format('svg'),
-        url('assets/font/Mignon-Regular.ttf.eot'),
-        url('assets/font/Mignon-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    src: url('assets/font/Mignon-Regular.ttf.woff') format('woff'), url('assets/font/Mignon-Regular.ttf.svg#Mignon-Regular') format('svg'), url('assets/font/Mignon-Regular.ttf.eot'), url('assets/font/Mignon-Regular.ttf.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,7 +11,8 @@
     box-sizing: border-box;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #008d87;
     text-align: center;
 }
@@ -28,7 +26,6 @@ h3 {
     margin-top: 80px;
     margin-bottom: 40px;
     text-align: center;
-
 }
 
 h4 {
@@ -62,10 +59,8 @@ blockquote cite {
     background-image: url("assets/bilder/header/4.jpg");
     background-size: cover;
     background-position: center;
-
     /*Comment out if you want to be lame!!!!!*/
     background-attachment: fixed;
-    
     height: 300px;
     margin: 30px 0;
 }
@@ -92,13 +87,16 @@ table tr {
 
 
 /*navbar*/
+
 nav {
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
 }
-  
-  /* Links inside the navbar */
+
+
+/* Links inside the navbar */
+
 nav a {
     float: left;
     font-size: 16px;
@@ -106,40 +104,53 @@ nav a {
     padding: 14px 16px;
     text-decoration: none;
 }
-  
-  /* The dropdown container */
+
+
+/* The dropdown container */
+
 .dropdown {
     float: left;
     overflow: hidden;
 }
-  
-  /* Dropdown button */
+
+
+/* Dropdown button */
+
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
 }
-  
-  /* Add a red background color to navbar links on hover */
-nav a:hover, .dropdown:hover .dropbtn {
+
+
+/* Add a red background color to navbar links on hover */
+
+nav a:hover,
+.dropdown:hover .dropbtn {
     background-color: #008d87;
 }
-  
-  /* Dropdown content (hidden by default) */
+
+
+/* Dropdown content (hidden by default) */
+
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-  
-  /* Links inside the dropdown */
+
+
+/* Links inside the dropdown */
+
 .dropdown-content a {
     float: none;
     color: black;
@@ -148,18 +159,24 @@ nav a:hover, .dropdown:hover .dropbtn {
     display: block;
     text-align: left;
 }
-  
-  /* Add a grey background color to dropdown links on hover */
+
+
+/* Add a grey background color to dropdown links on hover */
+
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 
-  /* Show the dropdown menu on hover */
+
+/* Show the dropdown menu on hover */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+
 /*end navbar*/
+
 tr>td {
     vertical-align: top;
 }
@@ -176,6 +193,7 @@ tr>td:first-child {
     width: 5ch;
     text-align: right;
 }
+
 #priceTable>tbody>tr>td:first-child {
     width: auto;
     margin-left: 40px;
@@ -211,26 +229,22 @@ footer {
     background-color: rgb(8, 202, 170);
 }
 
-#content {
+.content {
     margin: 0 20%;
 }
 
-@media only screen
-  and (max-width: 812px)
- {
-  
+@media only screen and (max-width: 812px) {
     #content {
         margin: 0;
     }
-
 }
 
-@media only screen and (max-width: 500px)
-{
+@media only screen and (max-width: 500px) {
     form input {
         width: 100%;
     }
 }
+
 #head {
     position: relative;
     display: block;
@@ -240,7 +254,7 @@ footer {
 #branding {
     position: absolute;
     text-align: center;
-    top:0;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -257,6 +271,7 @@ footer {
     max-height: 400px;
     opacity: 0.5;
 }
+
 .gallery.main {
     max-height: 600px;
     opacity: 1;
@@ -266,20 +281,20 @@ footer {
     display: none;
 }
 
-.imageLeft{
-    position:absolute;
+.imageLeft {
+    position: absolute;
     object-fit: cover;
     float: Left;
     width: 27%;
     margin-top: 9%;
     padding: 5px;
     height: 300px;
-    margin-left:4%;
-    opacity:0.1;
+    margin-left: 4%;
+    opacity: 0.1;
     left: 0%;
 }
 
-.imageCenter{
+.imageCenter {
     position: absolute;
     object-fit: cover;
     width: 35%;
@@ -288,27 +303,26 @@ footer {
     left: 32%;
 }
 
-.imageRight{
-    position:absolute;
+.imageRight {
+    position: absolute;
     object-fit: cover;
     float: Right;
     width: 27%;
     margin-top: 9%;
     padding: 5px;
     height: 300px;
-    opacity:0.1;
+    opacity: 0.1;
     left: 68%;
 }
 
-.imageHidden{
-    display:none;
+.imageHidden {
+    display: none;
 }
 
-.slideshow{
+.slideshow {
     position: relative;
-    display:block;
-    height:470px;
+    display: block;
+    height: 470px;
     left: 6%;
     width: 88%;
 }
-
