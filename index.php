@@ -224,7 +224,10 @@
         <h4 id="contactfield">Kontakt</h4>
 
         <?php if (!empty($_POST)): ?>
-            Yayz, deine email wurde versandt. zwinker zwinker ;^).
+            <p id="emailsent">
+                Ihre Email wurde versandt. Wir werden uns innerhalb der nächste
+                drei Businessmonaten zurückmelden!
+            </p>
         <?php
             // the message
             $msg = $_POST['message'];
