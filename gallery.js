@@ -6,7 +6,7 @@ function slideshow(gender, idNumber) {
     imageId = "" + gender + idNumber;
     imageId = imageId.toString();
     className = document.getElementById(imageId).className.toString();
-
+    console.log(className);
     if (className == "imageCenter") makeBig(gender, imageId, idNumber);
     else if (className == "imageBig") makeCenter(gender, imageId, idNumber);
 
