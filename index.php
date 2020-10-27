@@ -225,8 +225,8 @@
 
         <?php if (!empty($_POST)): ?>
             <p id="emailsent">
-                Ihre Email wurde versandt. Wir werden uns innerhalb der nächsten
-                drei Businessmonaten zurückmelden!
+                Ihre Email wurde versandt. Ich werde mich in Kürze bei Ihnen
+                melden.
             </p>
         <?php
             // the message
