@@ -232,7 +232,8 @@ footer {
 
 #emailsent {
     background-color: rgb(230, 230, 230);
-    padding: 3px 5%;
+    padding: 3px 15px;
+    text-align: center;
     border: thin solid black;
     border-radius: 15px;
 }
