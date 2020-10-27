@@ -96,15 +96,18 @@
 
         <span>... f&uuml;r die Dame</span>
 
-        <div id="herren" class="slideshow">
-            <img id="herren0" class="imageHidden" src="./assets/bilder/herren/0.jpg" onclick="slideshow('herren',0)" role="button">
-            <img id="herren1" class="imageLeft" src="./assets/bilder/herren/1.jpg" onclick="slideshow('herren',1)" role="button">
-            <img id="herren2" class="imageCenter" src="./assets/bilder/herren/2.jpg" onclick="slideshow('herren',2)" role="button">
-            <img id="herren3" class="imageRight" src="./assets/bilder/herren/3.jpg" onclick="slideshow('herren',3)" role="button">
-            <img id="herren4" class="imageHidden" src="./assets/bilder/herren/4.jpg" onclick="slideshow('herren',4)" role="button">
-            <img id="herren5" class="imageHidden" src="./assets/bilder/herren/5.jpg" onclick="slideshow('herren',5)" role="button">
-            <img id="herren6" class="imageHidden" src="./assets/bilder/herren/6.jpg" onclick="slideshow('herren',6)" role="button">
-            <img id="herren7" class="imageHidden" src="./assets/bilder/herren/7.jpg" onclick="slideshow('herren',7)" role="button">
+        <div id="herren" class="slideshow wrapper">
+            <div class = "aspect-ratio"></div>
+            <div class = "content">
+                <img id="herren0" class="imageHidden" src="./assets/bilder/herren/0.jpg" onclick="slideshow('herren',0)" role="button">
+                <img id="herren1" class="imageLeft" src="./assets/bilder/herren/1.jpg" onclick="slideshow('herren',1)" role="button">
+                <img id="herren2" class="imageCenter" src="./assets/bilder/herren/2.jpg" onclick="slideshow('herren',2)" role="button">
+                <img id="herren3" class="imageRight" src="./assets/bilder/herren/3.jpg" onclick="slideshow('herren',3)" role="button">
+                <img id="herren4" class="imageHidden" src="./assets/bilder/herren/4.jpg" onclick="slideshow('herren',4)" role="button">
+                <img id="herren5" class="imageHidden" src="./assets/bilder/herren/5.jpg" onclick="slideshow('herren',5)" role="button">
+                <img id="herren6" class="imageHidden" src="./assets/bilder/herren/6.jpg" onclick="slideshow('herren',6)" role="button">
+                <img id="herren7" class="imageHidden" src="./assets/bilder/herren/7.jpg" onclick="slideshow('herren',7)" role="button">
+            </div>
         </div>
 
 
