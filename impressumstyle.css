@@ -20,3 +20,9 @@ header a {
     text-decoration: none;
     color: black;
 }
+
+nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
