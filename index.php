@@ -232,9 +232,9 @@
             // use wordwrap() if lines are longer than 70 characters
             $msg = wordwrap($msg,70);
 
-            $address = fopen("mail.txt", "r") or die("Unable to open file!");
-            echo fread($address,filesize("mail.txt"));
-            fclose($address);
+            $myfile = fopen("mail.txt", "r") or die("Unable to open file!");
+            $address = fread($myfile,filesize("mail.txt"));
+            fclose($myfile);
             
             // send email
             $result = mail($address, 'Neue Nachricht von ' . $_POST['name'], $msg);
