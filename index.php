@@ -272,7 +272,7 @@
         <?php
 ?>
     </div>
-    <footer>(c) 2020</footer>
+    <footer>&copy; 2020 Good People Inc.</footer>
 </body>
 
 </html>
