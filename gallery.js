@@ -22,7 +22,7 @@ function makeBig(gender, centerId, idNumber) {
 
 function makeSmall(gender, centerId, idNumber) {
     document.getElementById(gender + centerId).className = 'imageCenter';
-    document.getElementById('blackscreen').style = 'display: hidden;';
+    document.getElementById('blackscreen').style = 'display: none;';
 }
 
 function shiftRight(gender, centerId, idNumber) {
