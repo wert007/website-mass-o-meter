@@ -69,27 +69,30 @@
         <h2 id="arbeiten">Realisiert...</h2>
 
 
-        <div id="damen" class="slideshow">
-            <img id="damen0" class="imageHidden" src="./assets/bilder/damen/0.jpg" onclick="slideshow('damen',0)" role="button">
-            <img id="damen1" class="imageLeft" src="./assets/bilder/damen/1.jpg" onclick="slideshow('damen',1)" role="button">
-            <img id="damen2" class="imageCenter" src="./assets/bilder/damen/2.jpg" onclick="slideshow('damen',2)" role="button">
-            <img id="damen3" class="imageRight" src="./assets/bilder/damen/3.jpg" onclick="slideshow('damen',3)" role="button">
-            <img id="damen4" class="imageHidden" src="./assets/bilder/damen/4.jpg" onclick="slideshow('damen',4)" role="button">
-            <img id="damen5" class="imageHidden" src="./assets/bilder/damen/5.jpg" onclick="slideshow('damen',5)" role="button">
-            <img id="damen6" class="imageHidden" src="./assets/bilder/damen/6.jpg" onclick="slideshow('damen',6)" role="button">
-            <img id="damen7" class="imageHidden" src="./assets/bilder/damen/7.jpg" onclick="slideshow('damen',7)" role="button">
-            <img id="damen8" class="imageHidden" src="./assets/bilder/damen/8.jpg" onclick="slideshow('damen',8)" role="button">
-            <img id="damen9" class="imageHidden" src="./assets/bilder/damen/9.jpg" onclick="slideshow('damen',9)" role="button">
-            <img id="damen10" class="imageHidden" src="./assets/bilder/damen/10.jpg" onclick="slideshow('damen',10)" role="button">
-            <img id="damen11" class="imageHidden" src="./assets/bilder/damen/11.jpg" onclick="slideshow('damen',11)" role="button">
-            <img id="damen12" class="imageHidden" src="./assets/bilder/damen/12.jpg" onclick="slideshow('damen',12)" role="button">
-            <img id="damen13" class="imageHidden" src="./assets/bilder/damen/13.jpg" onclick="slideshow('damen',13)" role="button">
-            <img id="damen14" class="imageHidden" src="./assets/bilder/damen/14.jpg" onclick="slideshow('damen',14)" role="button">
-            <img id="damen15" class="imageHidden" src="./assets/bilder/damen/15.jpg" onclick="slideshow('damen',15)" role="button">
-            <img id="damen16" class="imageHidden" src="./assets/bilder/damen/16.jpg" onclick="slideshow('damen',16)" role="button">
-            <img id="damen17" class="imageHidden" src="./assets/bilder/damen/17.jpg" onclick="slideshow('damen',17)" role="button">
-            <img id="damen18" class="imageHidden" src="./assets/bilder/damen/18.jpg" onclick="slideshow('damen',18)" role="button">
-            <img id="damen19" class="imageHidden" src="./assets/bilder/damen/19.jpg" onclick="slideshow('damen',19)" role="button">
+        <div id="damen" class="slideshow wrapper">
+            <div class = "aspect-ratio"></div>
+            <div class = "aspect-ratio-content">
+                <img id="damen0" class="imageHidden" src="./assets/bilder/damen/0.jpg" onclick="slideshow('damen',0)" role="button">
+                <img id="damen1" class="imageLeft" src="./assets/bilder/damen/1.jpg" onclick="slideshow('damen',1)" role="button">
+                <img id="damen2" class="imageCenter" src="./assets/bilder/damen/2.jpg" onclick="slideshow('damen',2)" role="button">
+                <img id="damen3" class="imageRight" src="./assets/bilder/damen/3.jpg" onclick="slideshow('damen',3)" role="button">
+                <img id="damen4" class="imageHidden" src="./assets/bilder/damen/4.jpg" onclick="slideshow('damen',4)" role="button">
+                <img id="damen5" class="imageHidden" src="./assets/bilder/damen/5.jpg" onclick="slideshow('damen',5)" role="button">
+                <img id="damen6" class="imageHidden" src="./assets/bilder/damen/6.jpg" onclick="slideshow('damen',6)" role="button">
+                <img id="damen7" class="imageHidden" src="./assets/bilder/damen/7.jpg" onclick="slideshow('damen',7)" role="button">
+                <img id="damen8" class="imageHidden" src="./assets/bilder/damen/8.jpg" onclick="slideshow('damen',8)" role="button">
+                <img id="damen9" class="imageHidden" src="./assets/bilder/damen/9.jpg" onclick="slideshow('damen',9)" role="button">
+                <img id="damen10" class="imageHidden" src="./assets/bilder/damen/10.jpg" onclick="slideshow('damen',10)" role="button">
+                <img id="damen11" class="imageHidden" src="./assets/bilder/damen/11.jpg" onclick="slideshow('damen',11)" role="button">
+                <img id="damen12" class="imageHidden" src="./assets/bilder/damen/12.jpg" onclick="slideshow('damen',12)" role="button">
+                <img id="damen13" class="imageHidden" src="./assets/bilder/damen/13.jpg" onclick="slideshow('damen',13)" role="button">
+                <img id="damen14" class="imageHidden" src="./assets/bilder/damen/14.jpg" onclick="slideshow('damen',14)" role="button">
+                <img id="damen15" class="imageHidden" src="./assets/bilder/damen/15.jpg" onclick="slideshow('damen',15)" role="button">
+                <img id="damen16" class="imageHidden" src="./assets/bilder/damen/16.jpg" onclick="slideshow('damen',16)" role="button">
+                <img id="damen17" class="imageHidden" src="./assets/bilder/damen/17.jpg" onclick="slideshow('damen',17)" role="button">
+                <img id="damen18" class="imageHidden" src="./assets/bilder/damen/18.jpg" onclick="slideshow('damen',18)" role="button">
+                <img id="damen19" class="imageHidden" src="./assets/bilder/damen/19.jpg" onclick="slideshow('damen',19)" role="button">
+            </div>
         </div>
 
 
@@ -118,12 +121,15 @@
 
         <h2 id="farbeUndStil">Kombiniert...</h2>
 
-        <div id="farbe" class="slideshow">
-            <img id="color0" class="imageHidden" src="./assets/bilder/farbe/0.jpg" onclick="slideshow('color',0)" role="button">
-            <img id="color1" class="imageLeft" src="./assets/bilder/farbe/1.jpg" onclick="slideshow('color',1)" role="button">
-            <img id="color2" class="imageCenter" src="./assets/bilder/farbe/2.jpg" onclick="slideshow('color',2)" role="button">
-            <img id="color3" class="imageRight" src="./assets/bilder/farbe/3.jpg" onclick="slideshow('color',3)" role="button">
-            <img id="color4" class="imageHidden" src="./assets/bilder/farbe/4.jpg" onclick="slideshow('color',4)" role="button">
+        <div id="farbe" class="slideshow wrapper">
+            <div class = "aspect-ratio"></div>
+            <div class = "aspect-ratio-content">
+                <img id="color0" class="imageHidden" src="./assets/bilder/farbe/0.jpg" onclick="slideshow('color',0)" role="button">
+                <img id="color1" class="imageLeft" src="./assets/bilder/farbe/1.jpg" onclick="slideshow('color',1)" role="button">
+                <img id="color2" class="imageCenter" src="./assets/bilder/farbe/2.jpg" onclick="slideshow('color',2)" role="button">
+                <img id="color3" class="imageRight" src="./assets/bilder/farbe/3.jpg" onclick="slideshow('color',3)" role="button">
+                <img id="color4" class="imageHidden" src="./assets/bilder/farbe/4.jpg" onclick="slideshow('color',4)" role="button">
+            </div>
         </div>
 
 
