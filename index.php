@@ -98,7 +98,7 @@
 
         <div id="herren" class="slideshow wrapper">
             <div class = "aspect-ratio"></div>
-            <div class = "content">
+            <div class = "aspect-ratio-content">
                 <img id="herren0" class="imageHidden" src="./assets/bilder/herren/0.jpg" onclick="slideshow('herren',0)" role="button">
                 <img id="herren1" class="imageLeft" src="./assets/bilder/herren/1.jpg" onclick="slideshow('herren',1)" role="button">
                 <img id="herren2" class="imageCenter" src="./assets/bilder/herren/2.jpg" onclick="slideshow('herren',2)" role="button">
