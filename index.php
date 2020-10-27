@@ -237,7 +237,7 @@
             fclose($myfile);
             echo ">>" . $address . "<<";
 
-            $headers = 'From: '. $_POST['email'] . "\r\n" .
+            $headers = 'From: kontakt@mass-o-meter.de' . "\r\n" .
             'Reply-To:' . $_POST['email']. "\r\n" .
             'X-Mailer: PHP/' . phpversion();
 
