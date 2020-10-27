@@ -224,7 +224,7 @@
         <h4 id="contactfield">Kontakt</h4>
 
         <?php if (!empty($_POST)): ?>
-            Yayz, deine email wurde versendet. zwinker zwinker ;^).
+            Yayz, deine email wurde versandt. zwinker zwinker ;^).
         <?php
             // the message
             $msg = $_POST['message'];
@@ -236,9 +236,14 @@
             $address = trim(fread($myfile,filesize("mail.txt")));
             fclose($myfile);
             echo ">>" . $address . "<<";
+
+            $headers = 'From: '. $_POST['email'] . "\r\n" .
+            'Reply-To:' . $_POST['email']. "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+
             // send email
             $subject = 'Neue Nachricht von ' . $_POST['name'];
-            $result = mail($address, $subject, $msg);
+            $result = mail($address, $subject, $msg, $headers);
         ?>
             
         <?php else: ?>
