@@ -274,7 +274,9 @@
         <?php
 ?>
     </div>
-    <footer>&copy; 2020 Good People Inc.</footer>
+    <footer>
+    <a href="impressum.html">Impressum</a><br>    
+    &copy; 2020 Good People Inc.</footer>
 </body>
 
 </html>
