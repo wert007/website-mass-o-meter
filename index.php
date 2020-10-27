@@ -238,7 +238,7 @@
             echo ">>" . $address . "<<";
 
             // $headers = "From: myplace@example.com\r\n";
-            $headers = 'From: kontakt@mass-o-meter.de\r\n';
+            $headers = 'From: www-data@mass-o-meter.de\r\n';
             $headers .= 'Reply-To: ' . $_POST['email'] . "\r\n";
             $headers .= 'Return-Path: ' . $_POST['email'] . "\r\n";
             $headers .= 'X-Mailer: PHP/' . phpversion() . "\r\n";
