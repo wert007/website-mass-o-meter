@@ -225,6 +225,22 @@
 
         <?php if (!empty($_POST)): ?>
             Yayz, deine email wurde versendet. zwinker zwinker ;^).
+        <?php
+            // the message
+            $msg = 'First line of text\nSecond line of text';
+
+            // use wordwrap() if lines are longer than 70 characters
+            $msg = wordwrap($msg,70);
+
+            $address = fopen("mail.txt", "r") or die("Unable to open file!");
+            echo fread($address,filesize("mail.txt"));
+            fclose($address);
+            
+            // send email
+            $result = mail($address, 'Neue Nachricht von ' . $_POST['name'], $msg);
+            echo $result
+        ?>
+            
         <?php else: ?>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#contactfield" method="post">
                 <span class="label">Name:</span><input type="text" name="name"><br>
@@ -236,21 +252,7 @@
         <?php endif; ?>
 
         <?php
-$myfile = fopen("mail.txt", "r") or die("Unable to open file!");
-echo fread($myfile,filesize("mail.txt"));
-fclose($myfile);
 ?>
-    <!-- <?php
-// the message
-$msg = 'First line of text\nSecond line of text';
-
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
-
-// send email
-$result = mail('arezjlcheeiqjgownz@mhzayt.com','My subject',$msg);
-echo $result
-?> -->
     </div>
     <footer>(c) 2020</footer>
 </body>
