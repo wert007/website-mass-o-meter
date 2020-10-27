@@ -227,7 +227,7 @@
             Yayz, deine email wurde versendet. zwinker zwinker ;^).
         <?php
             // the message
-            $msg = 'First line of text\nSecond line of text';
+            $msg = $_POST['message'];
 
             // use wordwrap() if lines are longer than 70 characters
             $msg = wordwrap($msg,70);
