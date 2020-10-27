@@ -230,7 +230,7 @@
             </p>
         <?php
             // the message
-            $msg = $_POST['message'];
+            $msg = $_POST['message'] . "\r\nGesendet von mass-o-meter.de";
 
             // use wordwrap() if lines are longer than 70 characters
             $msg = wordwrap($msg,70);
