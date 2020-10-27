@@ -237,9 +237,16 @@
             fclose($myfile);
             echo ">>" . $address . "<<";
 
-            $headers = 'From: kontakt@mass-o-meter.de' . "\r\n" .
-            'Reply-To:' . $_POST['email']. "\r\n" .
-            'X-Mailer: PHP/' . phpversion();
+            // $headers = "From: myplace@example.com\r\n";
+            $headers = 'From: kontakt@mass-o-meter.de\r\n';
+            $headers .= 'Reply-To: ' . $_POST['email'] . "\r\n";
+            $headers .= 'Return-Path: ' . $_POST['email'] . "\r\n";
+            $headers .= 'X-Mailer: PHP/' . phpversion() . "\r\n";
+            // $headers .= "Return-Path: myplace@example.com\r\n";
+            // $headers .= "CC: sombodyelse@example.com\r\n";
+            // $headers .= "BCC: hidden@example.com\r\n";
+
+
 
             // send email
             $subject = 'Neue Nachricht von ' . $_POST['name'];
