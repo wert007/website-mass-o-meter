@@ -298,6 +298,7 @@ footer {
     margin-left: 4%;
     opacity: 0.1;
     left: 0%;
+    padding-bottom:66.66%;
 }
 
 .imageCenter {
@@ -307,6 +308,7 @@ footer {
     height: 450px;
     padding: 1%;
     left: 32%;
+    padding-bottom:66.66%;
 }
 
 .imageRight {
@@ -319,6 +321,7 @@ footer {
     height: 300px;
     opacity: 0.1;
     left: 68%;
+    padding-bottom:66.66%;
 }
 
 .imageHidden {
