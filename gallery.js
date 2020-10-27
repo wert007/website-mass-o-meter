@@ -21,7 +21,7 @@ function makeBig(gender, centerId, idNumber) {
 }
 
 function makeCenter(gender, centerId, idNumber) {
-    document.getElementById(gender + centerId).className = 'imageCenter';
+    document.getElementById(centerId).className = 'imageCenter';
     document.getElementById('blackscreen').style = 'display: none;';
 }
 
