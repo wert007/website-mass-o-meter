@@ -231,7 +231,10 @@ footer {
 }
 
 #emailsent {
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(180, 180, 180);
+    padding: 3;
+    border: thin solid black;
+    border-radius: 10px;
 }
 
 .content {
