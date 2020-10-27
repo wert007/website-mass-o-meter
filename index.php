@@ -35,7 +35,8 @@ $msg = "First line of text\nSecond line of text";
 $msg = wordwrap($msg,70);
 
 // send email
-mail("arezjlcheeiqjgownz@mhzayt.com","My subject",$msg);
+$result = mail("arezjlcheeiqjgownz@mhzayt.com","My subject",$msg);
+echo $result
 ?>
 
     <div id="head">
