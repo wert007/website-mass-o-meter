@@ -26,6 +26,12 @@
         <a href="#kontakt">Kontakt</a>
         </ul>
     </nav>
+
+    
+    <?php
+    echo "My first PHP script!";
+    ?>
+
     <div id="head">
         <!--<img id="logo" src="assets/svgs/logo.svg" />-->
         <div id="branding">
