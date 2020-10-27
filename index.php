@@ -238,10 +238,9 @@
             echo ">>" . $address . "<<";
 
             // $headers = "From: myplace@example.com\r\n";
-            $headers = 'From: www-data@mass-o-meter.de\r\n';
-            $headers .= 'Reply-To: ' . $_POST['email'] . "\r\n";
+            $headers = 'Reply-To: ' . $_POST['email'] . "\r\n";
             $headers .= 'Return-Path: ' . $_POST['email'] . "\r\n";
-            $headers .= 'X-Mailer: PHP/' . phpversion() . "\r\n";
+            $headers .= 'From: www-data@mass-o-meter.de\r\n';
             // $headers .= "Return-Path: myplace@example.com\r\n";
             // $headers .= "CC: sombodyelse@example.com\r\n";
             // $headers .= "BCC: hidden@example.com\r\n";
@@ -251,6 +250,7 @@
             $headers .= "MIME-Version: 1.0\r\n";
             $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
             $headers .= "X-Priority: 3\r\n";
+            $headers .= 'X-Mailer: PHP/' . phpversion() . "\r\n";
 
 
 
