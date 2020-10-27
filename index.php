@@ -221,7 +221,7 @@
         <p>Die Ma&szlig;schneiderei ist einer der &auml;ltesten Handwerksberufe. Trotzdem gibt es vielf&auml;ltige M&ouml;glichkeiten, alte Schneiderkunst mit modernen Ideen zu verbinden und ein einzigartiges Kleidungsst&uuml;ck zu kreieren, das perfekt
             zu dem Anlass passt, zu dem es getragen werden soll. Genau das habe ich mir zur Aufgabe gemacht: eine helfende Hand(werkerin) zu sein.
         </p>
-        <h4>Kontakt</h4>
+        <h4 id="contactfield">Kontakt</h4>
         <!-- <form method="post">
             <span class="label">Name:</span><input type="text" name="name"><br>
             <span class="label">Email:</span><input type="text" name="email"><br> Message:
@@ -233,7 +233,7 @@
         <?php if (!empty($_POST)): ?>
             Yayz, deine email wurde versendet. zwinker zwinker ;^).
 <?php else: ?>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#contactfield" method="post">
         <span class="label">Name:</span><input type="text" name="name"><br>
         <span class="label">Email:</span><input type="text" name="email"><br> Message:
         <br>
