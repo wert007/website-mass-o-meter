@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 
 <body>
-    <div id="blackscreen" style="display:hidden;"></div>
+    <div id="blackscreen" style="display:hidden;background-color:rgba(0,0,0,0.7);"></div>
     <script src="gallery.js"></script>
     <nav>
         <a href="#home">Home</a>
