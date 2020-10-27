@@ -227,6 +227,7 @@ form {
 footer {
     padding: 2% 20%;
     background-color: rgb(8, 202, 170);
+    text-align: center;
 }
 
 .content {
