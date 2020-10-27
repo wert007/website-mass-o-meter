@@ -235,10 +235,9 @@
             $myfile = fopen("mail.txt", "r") or die("Unable to open file!");
             $address = fread($myfile,filesize("mail.txt"));
             fclose($myfile);
-            
+            echo ">>" . $address . "<<";
             // send email
             $result = mail($address, 'Neue Nachricht von ' . $_POST['name'], $msg);
-            echo $result
         ?>
             
         <?php else: ?>
