@@ -27,17 +27,6 @@
         </ul>
     </nav>
 
-    <?php
-// the message
-$msg = 'First line of text\nSecond line of text';
-
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
-
-// send email
-$result = mail('arezjlcheeiqjgownz@mhzayt.com','My subject',$msg);
-echo $result
-?>
 
     <div id="head">
         <!--<img id="logo" src="assets/svgs/logo.svg" />-->
@@ -233,13 +222,26 @@ echo $result
             zu dem Anlass passt, zu dem es getragen werden soll. Genau das habe ich mir zur Aufgabe gemacht: eine helfende Hand(werkerin) zu sein.
         </p>
         <h4>Kontakt</h4>
-        <form action="" method="post">
+        <form action="test.php" method="post">
             <span class="label">Name:</span><input type="text" name="name"><br>
             <span class="label">Email:</span><input type="text" name="email"><br> Message:
             <br>
             <textarea rows="5" id="message" name="message" cols="30"></textarea><br>
             <input type="submit" id="submit" name="submit" value="Submit">
         </form>
+
+        
+    <!-- <?php
+// the message
+$msg = 'First line of text\nSecond line of text';
+
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+
+// send email
+$result = mail('arezjlcheeiqjgownz@mhzayt.com','My subject',$msg);
+echo $result
+?> -->
     </div>
     <footer>(c) 2020</footer>
 </body>
