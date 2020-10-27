@@ -16,7 +16,7 @@ function slideshow(gender, idNumber) {
 
 
 function makeBig(gender, centerId, idNumber) {
-    document.getElementById(gender + centerId).className = 'imageBig';
+    document.getElementById(centerId).className = 'imageBig';
     document.getElementById('blackscreen').style = 'display: visible;';
 }
 
