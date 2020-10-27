@@ -231,13 +231,14 @@
         </form>
 
         <?php if (!empty($_POST)): ?>
-    Welcome, <?php echo htmlspecialchars($_POST["name"]); ?>!<br>
-    Your email is <?php echo htmlspecialchars($_POST["email"]); ?>.<br>
+            Yayz, deine email wurde versendet. zwinker zwinker ;^).
 <?php else: ?>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        Name: <input type="text" name="name"><br>
-        Email: <input type="text" name="email"><br>
-        <input type="submit">
+        <span class="label">Name:</span><input type="text" name="name"><br>
+        <span class="label">Email:</span><input type="text" name="email"><br> Message:
+        <br>
+        <textarea rows="5" id="message" name="message" cols="30"></textarea><br>
+        <input type="submit" id="submit" name="submit" value="Submit">
     </form>
 <?php endif; ?>
 
