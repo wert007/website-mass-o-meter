@@ -27,10 +27,16 @@
         </ul>
     </nav>
 
-    
     <?php
-    echo "My first PHP script!";
-    ?>
+// the message
+$msg = "First line of text\nSecond line of text";
+
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+
+// send email
+mail("arezjlcheeiqjgownz@mhzayt.com","My subject",$msg);
+?>
 
     <div id="head">
         <!--<img id="logo" src="assets/svgs/logo.svg" />-->
