@@ -334,6 +334,10 @@ footer {
     display: none;
 }
 
+.blackscreen {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 .slideshow {
     position: relative;
     display: block;
