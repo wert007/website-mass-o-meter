@@ -222,27 +222,24 @@
             zu dem Anlass passt, zu dem es getragen werden soll. Genau das habe ich mir zur Aufgabe gemacht: eine helfende Hand(werkerin) zu sein.
         </p>
         <h4 id="contactfield">Kontakt</h4>
-        <!-- <form method="post">
-            <span class="label">Name:</span><input type="text" name="name"><br>
-            <span class="label">Email:</span><input type="text" name="email"><br> Message:
-            <br>
-            <textarea rows="5" id="message" name="message" cols="30"></textarea><br>
-            <input type="submit" id="submit" name="submit" value="Submit">
-        </form> -->
 
         <?php if (!empty($_POST)): ?>
             Yayz, deine email wurde versendet. zwinker zwinker ;^).
-<?php else: ?>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#contactfield" method="post">
-        <span class="label">Name:</span><input type="text" name="name"><br>
-        <span class="label">Email:</span><input type="text" name="email"><br> Message:
-        <br>
-        <textarea rows="5" id="message" name="message" cols="30"></textarea><br>
-        <input type="submit" id="submit" name="submit" value="Submit">
-    </form>
-<?php endif; ?>
+        <?php else: ?>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#contactfield" method="post">
+                <span class="label">Name:</span><input type="text" name="name"><br>
+                <span class="label">Email:</span><input type="text" name="email"><br> Message:
+                <br>
+                <textarea rows="5" id="message" name="message" cols="30"></textarea><br>
+                <input type="submit" id="submit" name="submit" value="Submit">
+            </form>
+        <?php endif; ?>
 
-        
+        <?php
+$myfile = fopen("mail.txt", "r") or die("Unable to open file!");
+echo fread($myfile,filesize("mail.txt"));
+fclose($myfile);
+?>
     <!-- <?php
 // the message
 $msg = 'First line of text\nSecond line of text';
