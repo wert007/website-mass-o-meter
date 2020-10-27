@@ -237,7 +237,8 @@
             fclose($myfile);
             echo ">>" . $address . "<<";
             // send email
-            $result = mail($address, 'Neue Nachricht von ' . $_POST['name'], $msg);
+            $subject = 'Neue Nachricht von ' . $_POST['name'];
+            $result = mail($address, $subject, $msg);
         ?>
             
         <?php else: ?>
