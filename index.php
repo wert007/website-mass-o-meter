@@ -222,13 +222,24 @@
             zu dem Anlass passt, zu dem es getragen werden soll. Genau das habe ich mir zur Aufgabe gemacht: eine helfende Hand(werkerin) zu sein.
         </p>
         <h4>Kontakt</h4>
-        <form action="test.php" method="post">
+        <form method="post">
             <span class="label">Name:</span><input type="text" name="name"><br>
             <span class="label">Email:</span><input type="text" name="email"><br> Message:
             <br>
             <textarea rows="5" id="message" name="message" cols="30"></textarea><br>
             <input type="submit" id="submit" name="submit" value="Submit">
         </form>
+
+        <?php if (!empty($_POST)): ?>
+    Welcome, <?php echo htmlspecialchars($_POST["name"]); ?>!<br>
+    Your email is <?php echo htmlspecialchars($_POST["email"]); ?>.<br>
+<?php else: ?>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        Name: <input type="text" name="name"><br>
+        Email: <input type="text" name="email"><br>
+        <input type="submit">
+    </form>
+<?php endif; ?>
 
         
     <!-- <?php
