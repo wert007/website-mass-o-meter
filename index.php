@@ -233,7 +233,7 @@
             $msg = wordwrap($msg,70);
 
             $myfile = fopen("mail.txt", "r") or die("Unable to open file!");
-            $address = fread($myfile,filesize("mail.txt"));
+            $address = trim(fread($myfile,filesize("mail.txt")));
             fclose($myfile);
             echo ">>" . $address . "<<";
             // send email
