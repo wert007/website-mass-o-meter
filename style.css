@@ -293,7 +293,7 @@ footer {
     width: 27%;
     margin-top: 9%;
     padding: 5px;
-    height:70%;
+    height: 70%;
     margin-left: 4%;
     opacity: 0.1;
     left: 0%;
@@ -306,6 +306,16 @@ footer {
     height: 100%;
     padding: 1%;
     left: 32%;
+}
+
+.imageBig {
+    position: fixed;
+    width: auto;
+    height: 100vh;
+    top: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: 999;
 }
 
 .imageRight {
