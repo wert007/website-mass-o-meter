@@ -238,7 +238,6 @@
             $myfile = fopen("mail.txt", "r") or die("Unable to open file!");
             $address = trim(fread($myfile,filesize("mail.txt")));
             fclose($myfile);
-            echo ">>" . $address . "<<";
 
             // $headers = "From: myplace@example.com\r\n";
             $headers = 'Reply-To: ' . $_POST['email'] . "\r\n";
