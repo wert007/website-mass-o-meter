@@ -20,7 +20,7 @@ function makeBig(gender, centerId, idNumber) {
     document.getElementById('blackscreen').style = 'display: visible;';
 }
 
-function makeSmall(gender, centerId, idNumber) {
+function makeCenter(gender, centerId, idNumber) {
     document.getElementById(gender + centerId).className = 'imageCenter';
     document.getElementById('blackscreen').style = 'display: none;';
 }
