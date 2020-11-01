@@ -256,7 +256,7 @@
             // $headers .= "Return-Path: myplace@example.com\r\n";
             // $headers .= "CC: sombodyelse@example.com\r\n";
             // $headers .= "BCC: hidden@example.com\r\n";
-            $date = date('m/d/Y h:i:s a', time());
+            $date = format_date; //date('m/d/Y h:i:s a', time());
             echo $date;
             // $headers .= "Organization: Sender Organization\r\n";
             $headers .= "MIME-Version: 1.0\r\n";
