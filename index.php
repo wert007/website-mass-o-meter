@@ -253,6 +253,7 @@
             $headers = 'Reply-To: ' . $_POST['email'] . "\r\n";
             $headers .= 'Return-Path: ' . $_POST['email'] . "\r\n";
             $headers .= "From: www-data@mass-o-meter.de\r\n";
+            $headers .= "Sender: Mass-o-Meter\r\n";
             // $headers .= "Return-Path: myplace@example.com\r\n";
             // $headers .= "CC: sombodyelse@example.com\r\n";
             // $headers .= "BCC: hidden@example.com\r\n";
