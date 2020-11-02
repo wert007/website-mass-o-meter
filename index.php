@@ -277,10 +277,10 @@
         <?php else: ?>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#contactfield" method="post">
                 <span class="label">Name:</span><input type="text" name="name"><br>
-                <span class="label">Email:</span><input type="text" name="email"><br> Message:
+                <span class="label">Email:</span><input type="text" name="email"><br> Nachricht:
                 <br>
                 <textarea rows="5" id="message" name="message" cols="30"></textarea><br>
-                <input type="submit" id="submit" name="submit" value="Submit">
+                <input type="submit" id="submit" name="submit" value="Abschicken">
             </form>
         <?php endif; ?>
 
