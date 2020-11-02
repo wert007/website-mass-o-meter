@@ -259,7 +259,6 @@
             // $headers .= "BCC: hidden@example.com\r\n";
             // January 25, 2011 3:30:58 PM PDT
             $date = date('F d, Y g:i:s A e');
-            echo $date;
             // $headers .= "Organization: Sender Organization\r\n";
             $headers .= "MIME-Version: 1.0\r\n";
             $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
